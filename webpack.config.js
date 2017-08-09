@@ -39,8 +39,6 @@ module.exports = {
   plugins: [
     new WebpackBuildNotifierPlugin({
       title: "My Project Webpack Build"
-    }),
-    //new ExtractTextPlugin("solar-popup.css"),
-
+    })
   ]
 };
