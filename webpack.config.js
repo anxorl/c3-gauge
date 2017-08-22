@@ -38,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new WebpackBuildNotifierPlugin({
-      title: "My Project Webpack Build"
+      title: "Construcción c3-gauge"
     })
   ]
 };
