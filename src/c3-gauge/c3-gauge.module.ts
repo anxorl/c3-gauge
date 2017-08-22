@@ -10,17 +10,14 @@ export class GaugeDirective implements OnChanges, OnInit {
 
   @Input() public data: any;
   @Input() public chartOptions: any;
-  @Input() public configs: any;
+  @Input() public configs: c3.ChartConfiguration;
   @Input() public type: any;
 
   private element: ElementRef;
   private chart: c3.ChartAPI;
   private _f: (n: number) => string = (n: number) => { return n < 100 ? d3.format('.1f')(n) : d3.format('.0f')(n) };
 
-  constructor(el: ElementRef) {
-    this.element = el;
-
-  }
+  constructor(el: ElementRef) { this.element = el; }
 
   ngOnInit() {
     this.chart = c3.generate({
