@@ -20,15 +20,21 @@ module.exports = {
   },
   //devtool: "source-map",
   module: {
-    loaders: [{
-      test: /\.ts$/,
-      loader: 'ts-loader'
-    }]
+    rules: [{
+        test: /\.ts$/,
+        loader: 'ts-loader'
+      },
+      {
+        test: /\.css$/,
+        loaders: 'style-loader!css-loader'
+      },
+    ]
   },
 
   externals: {
     '@angular/core': '@angular/core',
     'c3': 'c3',
+    'c3/c3.min.css': 'c3/c3.min.css',
     'd3-format': 'd3-format'
   },
 

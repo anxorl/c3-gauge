@@ -1,6 +1,6 @@
 {
   "name": "c3-gauge",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "C3.js gauge module for angular 2+",
   "main": "./dist/c3-gauge.js",
   "module": "c3-gauge.js",
@@ -24,8 +24,10 @@
     "@types/c3": "^0.4.44",
     "@types/d3-format": "^1.2.1",
     "@types/typescript": "^2.0.0",
+    "css-loader": "^0.28.5",
     "del": "^2.2.2",
     "node-sass": "^4.5.3",
+    "style-loader": "^0.18.2",
     "ts-loader": "^2.3.3",
     "typescript": "^2.5.1",
     "webpack": "^2.7.0",

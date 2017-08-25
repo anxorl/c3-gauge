@@ -2,6 +2,7 @@
 import { Directive, ElementRef, Input, NgModule, SimpleChanges, OnChanges, OnInit } from '@angular/core';
 import * as d3 from 'd3-format';
 import * as c3 from 'c3';
+import 'c3/c3.min.css'
 
 @Directive({
   selector: 'c3-gauge'
