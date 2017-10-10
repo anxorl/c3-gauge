@@ -21,7 +21,7 @@ export class GaugeDirective implements OnChanges, OnInit {
   constructor(el: ElementRef) { this.element = el; }
 
   ngOnInit() {
-    this.chart = c3.generate({
+    let options: c3.ChartConfiguration = {
       bindto: this.element.nativeElement,
       data: {
         columns: [[this.data[0] || ' ', this.data[1] || 0]],
@@ -46,9 +46,11 @@ export class GaugeDirective implements OnChanges, OnInit {
         }
       },
       size: {
-        height: 100
+        height: 100,
+        width: 250
       }
-    });
+    }
+    this.chart = c3.generate(options);
   }
 
   ngOnChanges(changes: SimpleChanges): void {

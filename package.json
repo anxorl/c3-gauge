@@ -1,6 +1,6 @@
 {
   "name": "c3-gauge",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "C3.js gauge module for angular 2+",
   "main": "./dist/c3-gauge.js",
   "module": "c3-gauge.js",
